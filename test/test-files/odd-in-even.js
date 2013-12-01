@@ -1,3 +1,3 @@
 exports.input    = 'a';
 exports.columns  = '    '.length;
-exports.expected = ' a  ';
+exports.expected = '  a ';
