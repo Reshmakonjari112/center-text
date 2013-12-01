@@ -6,6 +6,10 @@ This was built as part of a CLI presentation to horizontally center text.
 
 **It was not designed to work with non-monospaced text.**
 
+**Bonus: It will properly center [ANSI colored text][].**
+
+[ANSI colored text]: http://en.wikipedia.org/wiki/ANSI_escape_code
+
 ## Getting Started
 Install the module with: `npm install center-text`
 
