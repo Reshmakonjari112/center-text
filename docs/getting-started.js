@@ -1,4 +1,4 @@
 var centerText = require('../');
 console.log(JSON.stringify(centerText('Hello World!', {
-  columns: 80
+  columns: 40
 })));

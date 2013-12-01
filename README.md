@@ -2,11 +2,9 @@
 
 Center text horizontally
 
-This was built as part of a CLI presentation to horizontally center text.
+This was built as part of a CLI presentation to horizontally center text. As a result, this will properly center [ANSI colored text][].
 
 **It was not designed to work with non-monospaced text.**
-
-**Bonus: It will properly center [ANSI colored text][].**
 
 [ANSI colored text]: http://en.wikipedia.org/wiki/ANSI_escape_code
 
@@ -14,10 +12,10 @@ This was built as part of a CLI presentation to horizontally center text.
 Install the module with: `npm install center-text`
 
 ```javascript
-// In an 80 column terminal
+// In an 40 column terminal
 var centerText = require('center-text');
 centerText('Hello World!');
-// Returns '                                  Hello World!                                  ';
+// Returns '              Hello World!              ';
 ```
 
 ## Documentation
