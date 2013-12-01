@@ -17,8 +17,7 @@ Install the module with: `npm install center-text`
 // In an 80 column terminal
 var centerText = require('center-text');
 centerText('Hello World!');
-// TODO: Move this into docs/getting-started.js
-// Returns '            Hello World!           ';
+// Returns '                                  Hello World!                                  ';
 ```
 
 ## Documentation
@@ -30,9 +29,24 @@ Return string of centered text
 - text `String` - Content to center
 - options `Object`
     - columns `Number` - Amount of columns to center between. If not provided, `process.stdout.columns` will be used.
+    - leftBias `Boolean` - If truthy, uneven offsets will pad to the right more than the left.
+        - See [Examples](#examples) for more info
 
 ## Examples
-_(Coming soon)_
+An example of `leftBias` in action:
+
+```js
+centerText('aa', {
+  columns: 3
+});
+// Returns ' aa'
+
+centerText('aa', {
+  columns: 3,
+  leftBias: true
+});
+// Returns 'aa '
+```
 
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint via [grunt](https://github.com/gruntjs/grunt) and test via `npm test`.
