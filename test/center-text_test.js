@@ -8,7 +8,7 @@ describe('An even string in an even amount of columns', function () {
 
   describe('when centered', function () {
     before(function () {
-      this.actual = centerText(this.file.text, {columns: this.file.columns});
+      this.actual = centerText(this.file.input, {columns: this.file.columns});
     });
 
     it('generates centered text', function () {
